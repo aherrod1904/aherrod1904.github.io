@@ -1,0 +1,429 @@
+:root {
+  --big-tam: 95px;
+  --h2-tam: 56px;
+  --p-tam: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #191919;
+}
+
+div.contenedor {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+header.principal {
+  padding-inline: 13%;
+  position: sticky;
+  transition: all ease 0.5s;
+  top: 0;
+  background-color: #191919;
+  z-index: 10;
+}
+header.principal div.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px;
+  transition: all ease 0.5s;
+}
+header.principal div.contenedor nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+header.principal div.contenedor nav ul li a {
+  text-decoration: none;
+  color: #e4e4e4;
+  font-size: var(--p-tam);
+  font-weight: 600;
+  transition: ease-in-out all 0.4s;
+}
+header.principal div.contenedor nav ul li a:hover {
+  color: #ff4d05;
+}
+header.principal div.contenedor #menu {
+  font-size: 42px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+section {
+  padding: 90px 15% 100px;
+}
+
+section.home div.contenedor {
+  position: relative;
+  min-height: 64vh;
+  background-image: url(../img/personalimage1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  align-items: center;
+}
+section.home div.contenedor div.home__texto h3 {
+  color: #e4e4e4;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+section.home div.contenedor div.home__texto h1 {
+  font-family: Dosis;
+  font-size: var(--big-tam);
+  color: white;
+  margin-bottom: 20px;
+}
+section.home div.contenedor div.home__texto h4 {
+  color: #e4e4e4;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 56px;
+}
+section.home div.contenedor div.home__texto a {
+  display: inline-block;
+  padding: 16px 45px;
+  background-color: #ff4d05;
+  text-decoration: none;
+  color: white;
+  font-size: var(--p-tam);
+  font-weight: 600;
+  border: 2px solid #ff4d05;
+  transition: all ease 0.5s;
+}
+section.home div.contenedor div.home__texto a:hover {
+  transform: translateX(5px);
+  background-color: transparent;
+}
+
+section.about {
+  padding-left: 13%;
+  padding-right: 11%;
+  background-color: #101010;
+}
+section.about div.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  align-items: center;
+  gap: 100px;
+  padding-inline: 40px;
+  color: white;
+}
+section.about div.contenedor div.about__tecnologias {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  align-items: end;
+  justify-content: center;
+  row-gap: 40px;
+}
+section.about div.contenedor div.about__tecnologias img.tecnologias__lenguajes {
+  width: 180px;
+  display: flex;
+  align-items: center;
+}
+section.about div.contenedor div.about__tecnologias img.php {
+  width: 140px;
+}
+section.about div.contenedor div.about__texto h2 {
+  font-family: Dosis;
+  font-size: var(--h2-tam);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+section.about div.contenedor div.about__texto h5 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #ff4d05;
+}
+section.about div.contenedor div.about__texto p {
+  color: rgba(198, 201, 216, 0.7490196078);
+  font-size: var(--p-tam);
+  line-height: 30px;
+  margin-bottom: 48px;
+}
+
+section.portfolio div.contenedor {
+  text-align: center;
+}
+section.portfolio div.contenedor h2 {
+  font-family: Dosis;
+  font-size: var(--h2-tam);
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: white;
+  margin-bottom: 80px;
+}
+section.portfolio div.contenedor h2 span {
+  font-family: Dosis;
+  font-size: var(--h2-tam);
+  font-weight: 800;
+  color: #ff4d05;
+}
+section.portfolio div.contenedor div.portfolio__base {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 40px;
+}
+section.portfolio div.contenedor div.portfolio__base div.base__caja {
+  position: relative;
+  border-radius: 32px;
+  box-shadow: 0 0 16px #191919;
+  min-height: 247px;
+  overflow: hidden;
+  display: flex;
+}
+section.portfolio div.contenedor div.portfolio__base div.base__caja img {
+  width: 100%;
+  transition: transform 0.5s;
+}
+section.portfolio div.contenedor div.portfolio__base div.base__caja div.caja__capa {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #ff004f);
+  display: flex;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+  transition: height 0.5s;
+  color: white;
+}
+section.portfolio div.contenedor div.portfolio__base div.base__caja div.caja__capa h4 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+section.portfolio div.contenedor div.portfolio__base div.base__caja div.caja__capa p {
+  font-size: 14px;
+  color: #e4e4e4;
+  line-height: 1.8;
+}
+section.portfolio div.contenedor div.portfolio__base div.base__caja div.caja__capa a i {
+  color: #ff4d05;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
+section.portfolio div.contenedor div.portfolio__base div.base__caja:hover img {
+  transform: scale(1.1);
+}
+section.portfolio div.contenedor div.portfolio__base div.base__caja:hover div.caja__capa {
+  height: 100%;
+}
+
+section.contact {
+  background-color: #101010;
+}
+section.contact div.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 40px;
+}
+section.contact div.contenedor div.contact__texto {
+  color: white;
+}
+section.contact div.contenedor div.contact__texto h4 {
+  margin: 18px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+section.contact div.contenedor div.contact__texto h2 {
+  font-size: 50px;
+  color: #ff4d05;
+  line-height: 1;
+}
+section.contact div.contenedor div.contact__texto p {
+  color: #e4e4e4;
+  font-size: var(--p-tam);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+section.contact div.contenedor ul {
+  margin-bottom: 44px;
+  list-style: none;
+}
+section.contact div.contenedor ul li {
+  margin-bottom: 12px;
+}
+section.contact div.contenedor ul li a {
+  display: block;
+  color: #e4e4e4;
+  font-size: 14px;
+  transition: all ease 0.45s;
+}
+section.contact div.contenedor div.contact__icons i {
+  height: 45px;
+  width: 45px;
+  background-color: #ff4d05;
+  color: white;
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 15px;
+  transition: all ease 0.45s;
+}
+section.contact div.contenedor div.contact__icons i:hover {
+  background-color: white;
+  color: #ff4d05;
+}
+section.contact div.contenedor div.contact__formulario form {
+  position: relative;
+}
+section.contact div.contenedor div.contact__formulario form input, section.contact div.contenedor div.contact__formulario form textarea {
+  width: 100%;
+  padding: 14px;
+  background-color: #191919;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+section.contact div.contenedor div.contact__formulario form textarea {
+  resize: none;
+}
+section.contact div.contenedor div.contact__formulario form input.submit {
+  display: inline-block;
+  background-color: #ff4d05;
+  color: white;
+  width: 160px;
+  transition: all ease 0.45s;
+}
+section.contact div.contenedor div.contact__formulario form input.submit:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+section.footer {
+  padding: 20px 15%;
+}
+section.footer div.contenedor div.footer__texto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #191919;
+  color: white;
+}
+section.footer div.contenedor div.footer__texto p {
+  font-size: 14px;
+}
+
+@media (max-width: 1440px) {
+  header.principal {
+    padding-inline: 2.5%;
+    transition: 0.1s;
+  }
+  section {
+    padding: 110px 3% 60px;
+    transition: 0.2s;
+  }
+  section.footer {
+    padding: 15px 3%;
+  }
+}
+@media (max-width: 1100px) {
+  :root {
+    --big-tam: 64px;
+    --h2-tam: 40px;
+    --p-tam: 16px;
+    transition: 0.1s;
+  }
+  section.home div.contenedor div.home__texto h3 {
+    font-size: 18px;
+  }
+  section.home div.contenedor {
+    min-height: 54vh;
+  }
+  section.portfolio div.contenedor div.portfolio__base {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 920px) {
+  section.about div.contenedor div.about__tecnologias {
+    text-align: center;
+    order: 2;
+    gap: 60px;
+  }
+  section.about div.contenedor div.about__tecnologias img {
+    width: 100%;
+    max-width: 100%;
+  }
+  section.home div.contenedor {
+    min-height: 37vh;
+  }
+  section.portfolio div.contenedor div.portfolio__base {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.contact div.contenedor {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 430px) {
+  :root {
+    --big-tam: 64px;
+    --h2-tam: 40px;
+    --p-tam: 14px;
+    transition: 0.1s;
+  }
+  header.principal div.contenedor {
+    flex-wrap: wrap;
+  }
+  section.about div.contenedor {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  section.about div.contenedor div.about__tecnologias {
+    grid-template-columns: 0.5fr;
+    text-align: center;
+    order: 2;
+    gap: 60px;
+  }
+  section.about div.contenedor div.about__tecnologias img {
+    width: 100%;
+    max-width: 100%;
+  }
+  section.home div.contenedor {
+    min-height: 30vh;
+  }
+  section.portfolio div.contenedor div.portfolio__base {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  section.contact div.contenedor {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */

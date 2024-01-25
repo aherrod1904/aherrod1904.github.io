@@ -1,0 +1,191 @@
+$color-letra: #424241;
+$color-letra2: #9E9D9B;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    font-weight: 400;
+    background: linear-gradient(to right, #FFFFFF 50%, #DEDAD5 50%);
+}
+
+div.contenedor{
+    max-width: 1440px;
+    padding-inline: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header.principal{
+    div.contenedor{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: flex;
+        gap: 191px;
+        align-items: center;
+        nav ul.principal__navbar{
+            display: flex;
+            align-items: center;
+            gap: 56px;
+            list-style: none;
+
+            li a{
+                text-decoration: none;
+                color: $color-letra2;
+            }
+
+            a.home{
+                color: $color-letra;
+            }
+        }
+    }
+}
+
+
+section.texto{
+    padding-top: 60px;
+    div.contenedor{
+        h1{
+            font-family: Playfair Display;
+            font-size: 70px;
+            font-weight: 400;
+            width: 700px;
+            color: $color-letra;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        p{
+            color: $color-letra2;
+            width: 600px;
+        }
+
+
+        div.texto__boton{
+            padding-top: 20px;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            a.boton__get{
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                background-color: $color-letra;
+                color: white;
+                text-decoration: none;
+
+                &::after{
+                    content: "";
+                    background-image: url(../img/diagonal-arrow-right-up.svg);
+                    background-size: 20px 20px;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            a.boton__learn{
+                text-decoration: none;
+                color: $color-letra;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                &::after{
+                    content: "";
+                    background-image: url(../img/chevron-down.svg);
+                    background-size: 20px 20px;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+section.imagenes{
+    div.contenedor{
+        display: flex;
+        gap: 80px;
+        position: absolute;
+        right: 0;
+        top: 150px;
+        z-index: -1;
+    }
+}
+
+
+section.estadisticas{
+    padding-top: 280px;
+    div.contenedor{
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        gap: 40px;
+
+        div.estadisticas__datos{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            h2{
+                width: 100%;
+                font-size: 50px;
+                margin: 0;
+                color: $color-letra;
+            }
+            p{
+                width: 100%;
+                color: $color-letra2;
+            }
+        }
+    }
+}
+
+
+
+section.servicio{
+    div.contenedor{
+        display: grid;
+        grid-template-rows: repeat(1, 50px);
+        gap: 20px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        align-items: center;
+        position: absolute;
+        right: 93px;
+        width: 270px;
+        bottom: -274px;
+        background-color: white;
+        p{
+            margin: 0;
+        }
+        img{
+            width: 270px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: $color-letra;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+
+            span.num{
+                padding-right: 20px;
+            }
+
+            &::after{
+                content: "";
+                background-image: url(../img/Arrow.svg);
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        
+    }
+}

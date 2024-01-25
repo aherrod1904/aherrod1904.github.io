@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position-y: end;
+    background-position-x: right;
+    font-family: poppins;
+    padding-left: 50px;
+
+}
+
+img.logo{
+    width: 110px;
+
+    
+}
+
+header{
+    height: 80px;
+    padding-right: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+nav ul.navegacion{
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    list-style: none;
+    
+}
+
+
+li a{
+    text-decoration: none;
+    color: #424241;
+
+}
+
+
+section.texto{
+    color: var(--text-and-main-black, #424241);
+    display:flex ;
+    flex-direction: column;
+}
+
+span.cian{
+    color: var(--text-and-main-gray, #7EDAD2);
+}
+
+p.text{
+    margin-bottom: 0;
+    width: 500px;
+}
+
+
+p.g{
+    font-family: bebas neue;
+    font-size: 80px;
+}
+
+p.p{
+    width: 450px;
+    margin: 0;
+    color: #909090;
+}
+
+a.boton{
+    margin-top: 30px;
+    width: max-content;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #7EDAD2;
+    color: white;
+}
+
+
+section.num{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: 100px;
+}
+
+section div.a{
+    text-align: center;
+}
+
+div h1{
+    margin: 0;
+}
+
+div p{
+    margin: 0;
+    color: #909090;
+}
+
+
+section.sec{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: center;
+    gap: 50px;
+    height: 200px;
+}
+
+section.sec div{
+    background-color: white;
+    font-size: 15px;
+}
+
+
+section.sec div h1{
+    font-size: 15px;
+}
+
+section.sec div p{
+    font-size: 13px;
+    color: #909090;
+}

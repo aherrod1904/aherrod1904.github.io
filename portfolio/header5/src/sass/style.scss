@@ -1,0 +1,174 @@
+$naranja_principal: #F38160;
+
+$color_texto_primario: #403C39;
+$color_texto-secundario: #909090;
+$color_texto_terciario: #949494;
+
+
+@mixin boton {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 30px;
+    background-color: $naranja_principal;
+    color: white;
+    border-radius: 15px;
+}
+
+@mixin espaciado {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+header.principal{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img.header__logo{
+        padding-right: 60px;
+    }
+
+    nav ul.nav__bar{
+        display: flex;
+        align-items: center;
+        gap: 56px;
+        list-style: none;
+    
+        li a{
+            text-decoration: none;
+            color: $color_texto-secundario;
+        }
+
+        a.nav__home{
+            color: $naranja_principal;
+            background-image: url(../img/bar.svg);
+            background-repeat: no-repeat;
+            background-position-y: 30px;
+            background-position-x: center;
+            padding-bottom: 15px;
+        }
+    }
+
+    div.header__sign{
+        display: flex;
+        align-items: center;
+        gap: 23px;
+
+        a.up{
+            @include boton();
+        }
+
+        a.in{
+            color: $naranja_principal;
+        }
+    }
+}
+
+section.inicial{
+    @include espaciado();
+    background-image: url(../img/Groceries.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    width: 1225px;
+    background-size: contain;
+
+    h1{
+        font-size: 60px;
+        width: 600px;
+        font-family: montserrat;
+        margin-bottom: 0;
+        color: $color_texto_primario;
+
+        span{
+            color: $naranja_principal;
+        }
+    }
+
+    p{
+        font-size: 16px;
+        width: 550px;
+        color: $color_texto_terciario;
+    }
+    
+    div.inicial__busca {
+        padding-top: 20px;
+        display: flex;
+        input.busca__caja {
+            background-color: #D0D0D2;
+            width: 300px;
+            height: 40px;
+            border-bottom-left-radius: 8px;
+            border-top-left-radius: 8px;
+            color: black;
+            border: none;
+
+        }
+        input.busca__icon {
+            @include boton();
+            border-radius: 0;
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+            padding: 7px 10px;
+        }
+    }
+
+    nav ul.nav__checks{
+        list-style: none;
+        padding: 0;
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 70px);
+
+        li{
+            display: flex;
+            align-items: center;
+            color: $color_texto_terciario;
+        }
+
+    }
+
+}
+
+
+section.productos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div{
+        width: 240px;
+
+    
+        h1{
+            font-weight:normal;
+            font-size: 18px;
+            color: $color_texto_primario;
+            margin: 0;
+        }
+
+        p{
+            color: $color_texto-secundario;
+            font-size: 14px;
+            padding-bottom: 20px;
+        }
+    }
+}

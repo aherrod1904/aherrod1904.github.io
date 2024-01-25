@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/ellipse.svg);
+    background-repeat: no-repeat;
+    background-size: 220px;
+    background-position-y: center;
+    font-family: poppins;
+
+}
+
+header{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+nav ul.navbar{
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+a.home{
+    color: #9B9A78;
+}
+
+
+div.sign{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+}
+
+a.in{
+    color: #9B9A78;
+}
+
+
+a.up{
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #9B9A78;
+    color: white;
+}
+
+
+img.place{
+    width: 700px;
+    padding-left: 68px;
+
+}
+
+
+section.texto{
+    margin-left: 68px;
+    background-image: url(../img/Placeholder.png);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+    height: 500px;
+    width: 94%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+
+div.divi{
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: start;
+    justify-content: space-around;
+    font-family: Playfair Display;
+    
+}
+
+h1.gim{
+    align-self: end;
+    margin: 10px;
+}
+
+
+h1.text.g{
+    margin-bottom: 0;
+}
+
+h1.text.ge{
+    margin: 0;
+    margin-left: 38px;
+}
+
+p.text{
+    font-size: 20px;
+    margin-left: 42px;
+    color: #909090;
+}
+
+ul.checks{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 35px;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 35%;
+}
+
+li.list{
+    display: flex;
+    align-items: center;
+}
+
+
+li.c{
+    margin-right: 31px;
+}
+
+
+section.articulos{
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: space-evenly;
+}
+
+article h1{
+    margin: 0;
+}
+
+
+img.icon{
+    width: 50px;
+}

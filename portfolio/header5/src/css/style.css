@@ -1,0 +1,142 @@
+main {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+header.principal {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header.principal img.header__logo {
+  padding-right: 60px;
+}
+header.principal nav ul.nav__bar {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  list-style: none;
+}
+header.principal nav ul.nav__bar li a {
+  text-decoration: none;
+  color: #909090;
+}
+header.principal nav ul.nav__bar a.nav__home {
+  color: #F38160;
+  background-image: url(../img/bar.svg);
+  background-repeat: no-repeat;
+  background-position-y: 30px;
+  background-position-x: center;
+  padding-bottom: 15px;
+}
+header.principal div.header__sign {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+header.principal div.header__sign a.up {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 12px 30px;
+  background-color: #F38160;
+  color: white;
+  border-radius: 15px;
+}
+header.principal div.header__sign a.in {
+  color: #F38160;
+}
+
+section.inicial {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(../img/Groceries.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  width: 1225px;
+  background-size: contain;
+}
+section.inicial h1 {
+  font-size: 60px;
+  width: 600px;
+  font-family: montserrat;
+  margin-bottom: 0;
+  color: #403C39;
+}
+section.inicial h1 span {
+  color: #F38160;
+}
+section.inicial p {
+  font-size: 16px;
+  width: 550px;
+  color: #949494;
+}
+section.inicial div.inicial__busca {
+  padding-top: 20px;
+  display: flex;
+}
+section.inicial div.inicial__busca input.busca__caja {
+  background-color: #D0D0D2;
+  width: 300px;
+  height: 40px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  color: black;
+  border: none;
+}
+section.inicial div.inicial__busca input.busca__icon {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 12px 30px;
+  background-color: #F38160;
+  color: white;
+  border-radius: 15px;
+  border-radius: 0;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 7px 10px;
+}
+section.inicial nav ul.nav__checks {
+  list-style: none;
+  padding: 0;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 70px);
+}
+section.inicial nav ul.nav__checks li {
+  display: flex;
+  align-items: center;
+  color: #949494;
+}
+
+section.productos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.productos div {
+  width: 240px;
+}
+section.productos div h1 {
+  font-weight: normal;
+  font-size: 18px;
+  color: #403C39;
+  margin: 0;
+}
+section.productos div p {
+  color: #909090;
+  font-size: 14px;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=style.css.map */
