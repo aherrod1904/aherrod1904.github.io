@@ -1,0 +1,121 @@
+@import "./abstracts/abstracts";
+@import "./vendors/vendors";
+@import "./base/base";
+@import "./components/components";
+@import "./layout/layout";
+@import "./pages/pages";
+@import "./themes/themes";
+@import "settings";
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.bg-darklight{
+    background-color: rgb(21, 21, 21);
+}
+
+
+.fs-1{
+    font-size: 75px !important;
+}
+
+.fs-2{
+    font-size: 60px !important;
+}
+
+
+.w-60{
+    width: 60%;
+}
+
+
+.w-32{
+    width: 32%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.pb-6{
+    padding-bottom: 100px !important;
+}
+
+.pt-6{
+    padding-top: 100px !important;
+}
+
+.adam{
+    height: 200px;
+}
+
+.adam::after{
+    content: url('../img/Rectangle.svg');
+    position: relative;
+    display: block;
+    top: -65px;
+    left: 100px;
+
+}
+
+
+
+.img-background1{
+    background-image: url(../img/image.png);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-size: 260px;
+    background-position-x: 90%;
+
+}
+
+.img-background2{
+    background-image: url(../img/Group6.svg);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    position: relative;
+    background-position-x: -20%;
+    
+}
+
+.img-background3{
+    background-image: url(../img/Group26.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    position: relative;
+
+    
+}
+
+
+
+.bg-opacity-1 {
+    --bs-bg-opacity: 0.01;
+}
+
+.link:hover{
+    color: rgb(25, 135, 84) !important;
+}
+
+.link::after{
+    content: url('../img/Rectangle3.svg');
+    position: relative;
+    left: 0px;
+    display: block;
+    top: -17px;
+
+}
+
+.row-gap-30{
+    row-gap: 30px;
+}
+
+.row-gap-60{
+    row-gap: 60px;
+}
+
+
+.container-fluid{
+    max-width: 1135px;
+    padding-inline: 50px;
+}
+
